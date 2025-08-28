@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Alerts</title>
+    <style>
+        /* Basic Alert Styles */
+        .alert {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            position: relative;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Alert Types */
+        .alert-success {
+            background-color: #4CAF50;
+        }
+
+        .alert-warning {
+            background-color: #FFC107;
+            color: #333;
+        }
+
+        .alert-danger {
+            background-color: #f44336;
+        }
+
+        .alert-info {
+            background-color: #2196F3;
+        }
+
+        /* Close Button */
+        .alert .close-btn {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Success Alert -->
+    <div class="alert alert-success">
+        Success! Your action was completed.
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+
+    <!-- Warning Alert -->
+    <div class="alert alert-warning">
+        Warning! Check your inputs.
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+
+    <!-- Danger Alert -->
+    <div class="alert alert-danger">
+        Error! Something went wrong.
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+
+    <!-- Info Alert -->
+    <div class="alert alert-info">
+        Note: Remember to save your work.
+        <button class="close-btn" onclick="this.parentElement.style.display='none';">&times;</button>
+    </div>
+
+</body>
+</html>
